@@ -15,15 +15,16 @@ params:
   DateFormat: "January 2, 2006"
 
   ShowReadingTime: true
-  #ShowShareButtons: true
+  ShowShareButtons: true
+  ShareButtons: ["linkedin", "twitter"] # To customize which share buttons to be enabled on page
   #ShowPostNavLinks: true
   ShowBreadCrumbs: true
-  ShowCodeCopyButtons: false
+  ShowCodeCopyButtons: true
   ShowWordCount: true
   ShowRssButtonInSectionTermList: true
   UseHugoToc: true
   disableSpecial1stPost: false
-  disableScrollToTop: false
+  disableScrollToTop: true
   comments: false
   hidemeta: false
   hideSummary: false
@@ -76,3 +77,13 @@ outputs:
         - HTML
         - RSS
         - JSON
+
+markup:
+  highlight:
+    codeFences: true
+    guessSyntax: true
+    lineNoStart: 1
+    lineNos: true
+    lineNumbersInTable: true
+    tabWidth: 4
+    noClasses: false

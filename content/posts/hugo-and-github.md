@@ -14,4 +14,29 @@ I'd been running my blog on Ghost and DigitalOcean for a bit now, and while it's
 * For the reasons above, finding a theme is painful. It makes me think I'll pick one and stick with it.
 * I love being able to write in VS Code. I set up some tasks for running the server and creating new posts:
 
-![Image 0](../../images/hugo-and-github_1690665789509.png)  
+```json
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Hugo Start Server",
+            "type": "shell",
+            "command": "hugo server",
+            "problemMatcher": []
+        },
+        {
+            "label": "Hugo New Post",
+            "type": "shell",
+            "command": "hugo new --kind post posts/\"${input:postName}.md\"",
+            "problemMatcher": []
+        }
+    ],
+    "inputs": [
+      {
+        "id": "postName",
+        "type": "promptString",
+        "description": "Post title"
+      }
+    ]
+}
+```

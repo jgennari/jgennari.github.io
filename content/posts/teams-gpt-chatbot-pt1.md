@@ -7,7 +7,7 @@ author: "Me"
 category: ["Tech"]
 ---
 
-Aliquid nihil quam eos. Veniam facilis rerum dolore. Natus sit harum autem eligendi ex iusto ut molestiae. Nobis minima perspiciatis maiores consequatur.
+
 
 ![Image 5](../../images/teams-gpt-chatbot-pt1_1690656393569.png)  
 
