@@ -31,8 +31,8 @@ params:
   tocopen: false
 
   homeInfoParams:
-    Title: Hi there wave
-    Content: Can be Info, links, about...
+    Title: Hello friends 👋
+    Content: This blog is my space to share all things tech, fitness and triathlon.
 
   socialIcons: # optional
       - name: github
@@ -41,6 +41,10 @@ params:
         url: "https://twitter.com/cybrjoe"
       - name: instagram
         url: "https://instagram.com/joeygennari"
+      - name: linkedin
+        url: "https://www.linkedin.com/in/jgennari/"
+      - name: strava
+        url: "https://www.strava.com/athletes/jgennari"
 
 languages:
     en:
@@ -52,14 +56,14 @@ languages:
           series: series
         menu:
             main:
-                - name: Series
+                - name: series
                   url: series
                   weight: 5
-                - name: Archive
+                - name: archive
                   url: archives
                   weight: 5
-                - name: Categories
-                  url: categories/
+                - name: tags
+                  url: tags/
                   weight: 10
                 - identifier: search
                   name:

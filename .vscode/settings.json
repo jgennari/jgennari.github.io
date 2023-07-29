@@ -1,0 +1,8 @@
+{
+    "markdown-image.base.uploadMethod": "Local",
+    "markdown-image.base.urlEncode": true,
+    "markdown-image.local.path": "/static/images",
+    "markdown-image.base.altFormat": "Image ${index}",
+    "markdown-image.base.fileNameFormat": "${mdname}_${timestamp}",
+    "markdown-image.local.referencePath": "../../images/"
+}

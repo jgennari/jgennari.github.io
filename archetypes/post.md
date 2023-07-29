@@ -4,6 +4,7 @@ date: {{ .Date }}
 draft: true
 tags: []
 author: "Me"
-category: ""
+category: []
+series: []
 ---
 

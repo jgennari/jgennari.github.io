@@ -1,0 +1,26 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Hugo Start Server",
+            "type": "shell",
+            "command": "hugo server",
+            "problemMatcher": []
+        },
+        {
+            "label": "Hugo New Post",
+            "type": "shell",
+            "command": "hugo new --kind post posts/\"${input:postName}.md\"",
+            "problemMatcher": []
+        }
+    ],
+    "inputs": [
+      {
+        "id": "postName",
+        "type": "promptString",
+        "description": "Post title"
+      }
+    ]
+}
