@@ -1,0 +1,22 @@
+<div class="screen-recording">
+    <video autoplay controls loop muted playsinline>
+        <source src="../../video/{{ .Get "src" }}.webm" type="video/webm; codecs=vp9,vorbis" />
+        <source src="../../video/{{ .Get "src" }}.mp4" type="video/mp4" />
+    </video>
+</div>
+
+<style>
+    .screen-recording {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .screen-recording>video {
+        max-width: 100%;
+        height: auto;
+        border-radius: 4px;
+    }
+</style>
