@@ -1,5 +1,5 @@
 ---
-title: "Teams Gpt Chatbot Pt2"
+title: "Adding Chat Context to Teams: Pt 2"
 date: 2023-07-29T21:43:07-04:00
 draft: false
 tags: ["ai","chatgpt","microsoft","teams"]
