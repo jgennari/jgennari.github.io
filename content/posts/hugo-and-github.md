@@ -1,6 +1,6 @@
 ---
 title: "Hugo and Github"
-date: 2023-07-29T17:22:03-04:00
+date: 2023-07-28T17:22:03-04:00
 draft: false
 tags: ["hugo","github"]
 author: "Me"
