@@ -33,7 +33,7 @@ params:
 
   homeInfoParams:
     Title: Hello friends 👋
-    Content: This blog is my space to share all things tech, fitness and triathlon.
+    Content: My name is Joey Gennari and I'm an engineer and athlete from the United States. I have interest in AI, software development, data science, and endurance sports. I also love 3D printing, CAD and design-for-manufacturing. Contact me at hi@gennari.com.
 
   socialIcons: # optional
       - name: github
@@ -46,6 +46,8 @@ params:
         url: "https://www.linkedin.com/in/jgennari/"
       - name: strava
         url: "https://www.strava.com/athletes/jgennari"
+      - name: printables
+        url: "https://www.printables.com/social/202625-joey-gennari"
 
 languages:
     en:
