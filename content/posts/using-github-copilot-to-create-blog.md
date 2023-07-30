@@ -1,6 +1,6 @@
 ---
 title: "Using Github Copilot to Create Blog Posts"
-date: 2023-07-30T22:15:11-04:00
+date: 2023-07-30T10:15:11-04:00
 draft: false
 tags: ["ai","github","copilot","blog","hugo"]
 author: "Me"
