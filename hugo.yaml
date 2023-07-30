@@ -33,7 +33,7 @@ params:
 
   homeInfoParams:
     Title: Hello friends 👋
-    Content: My name is Joey Gennari and I'm an engineer and athlete from the United States. I have interest in AI, software development, data science, and endurance sports. I also love 3D printing, CAD and design-for-manufacturing. Contact me at hi@gennari.com.
+    Content: My name is Joey Gennari and I'm a founder at [Movement.io](https://movment.io), a video delivery platform for fitness creators. I'm also an engineer and athlete from the United States. I have interest in AI, software development, data science, and endurance sports. I also love 3D printing, CAD and design-for-manufacturing. Contact me at hi@gennari.com.
 
   socialIcons: # optional
       - name: github
