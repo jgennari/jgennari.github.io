@@ -2,6 +2,10 @@
 title: "Creating a Docker Hub Repository"
 date: 2024-02-28T11:12:38-05:00
 draft: false
+tags: ["docker","unraid"]
+author: "Me"
+category: ["Tech"]
+series: ["Build with Me"]
 ---
 
 Recently I was looking to implement some analytics from this site and came across the following blog post by Haseed Majid: [How to Add Page Views to your Hugo Blog Posts Using Goatcounter](https://haseebmajid.dev/posts/2022-11-25-how-to-add-page-views-to-your-hugo-blog-posts-using-goatcounter/). I really like the concept of [Goatcounter](https://github.com/arp242/goatcounter) and wanted to try it in my self-hosted environment, but it appears the creator has strong opinions about Docker, so there's no provided `Dockerfile`. There are a few implementations referenced in the readme, however they were all based on older versions and not kept up. 
