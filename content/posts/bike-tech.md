@@ -9,6 +9,8 @@ author: "Me"
 
 If you've never been on a road bike, or if you haven't been on one in the last 10 years, the amount of technology on bikes today is mindblowing. From electronic shifting to power meters, the technology has come a long way. But how much of this tech is nice to have and how much makes a difference? Let's jump in and find out. 
 
+![Image 6](../../images/bike-tech_1709823077616.jpeg)  
+
 ### Electronic Shifting
 
 One of the biggest shifts in the industry, and maybe the most controversial, is the move to electronic shifting. Electronic shifting replaces the traditional mechanical cables with electronic wires and motors. The most popular electronic shifting systems are Shimano's Di2 and SRAM's eTap. There are a few benefits to electronic shifting. The first is that it's more precise. The shifting is always spot on and you don't have to worry about cables stretching or getting gunked up. The second is that it's customizable. You can program the buttons to shift however you want. The third is that it's easier to shift. You don't have to push as hard to shift and you can shift from the hoods, drops, or even the tops of the bars. 
