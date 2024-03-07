@@ -8,14 +8,15 @@ author: "Me"
 ---
 
 If you've never been on a road bike, or if you haven't been on one in the last 10 years, the amount of technology on bikes today is mindblowing. From electronic shifting to power meters, the technology has come a long way. But how much of this tech is nice to have and how much makes a difference? Let's jump in and find out. 
+ 
+![Bike Tech by Component](../../images/bike-tech_1709823815230.jpeg)  
 
-![Image 6](../../images/bike-tech_1709823077616.jpeg)  
 
 ### Electronic Shifting
 
 One of the biggest shifts in the industry, and maybe the most controversial, is the move to electronic shifting. Electronic shifting replaces the traditional mechanical cables with electronic wires and motors. The most popular electronic shifting systems are Shimano's Di2 and SRAM's eTap. There are a few benefits to electronic shifting. The first is that it's more precise. The shifting is always spot on and you don't have to worry about cables stretching or getting gunked up. The second is that it's customizable. You can program the buttons to shift however you want. The third is that it's easier to shift. You don't have to push as hard to shift and you can shift from the hoods, drops, or even the tops of the bars. 
 
-![Image 2](../../images/bike-tech_1709493971287.png)
+![Di2 Satellite Shifters](../../images/bike-tech_1709493971287.png)
 > Oh and one more upside is you and have some unusual routing situations, like these additional shifters on the top bar.
 
 Some of the downsides are that it's more expensive, requires digital tools to tune, and can be more complicated. It also requires charging, but the batteries last at least 1,000 miles.  
@@ -27,7 +28,7 @@ Some of the downsides are that it's more expensive, requires digital tools to tu
 
 Power meters are another big shift in the industry. Power meters measure the amount of power you're putting out in watts. This is a much more accurate way to measure effort than heart rate or speed. Power meters can be built into the crank, pedals, or hubs. On my BMC Roadmachine, I have Garmin Vector 3 pedals. These pedals measure the power from each leg and send it to my bike computer.
 
-![Image 3](../../images/bike-tech_1709494109962.png)  
+![Intervals.icu screengrab](../../images/bike-tech_1709494109962.png)  
 
 > #### Why it matters
 > Power meters are a game-changer for training. They allow you to properly measure your effort, which is essential for training day-to-day as well as race-day pacing. Whether you're solo into the wind, or deep in the peloton, you can measure your effort and make sure you're not going too hard or too easy.
@@ -36,12 +37,12 @@ Power meters are another big shift in the industry. Power meters measure the amo
 
 Radar is a new technology that's been added to bike computers. The radar is a small device that mounts to the back of your bike and sends a signal to your bike computer. The bike computer then displays a small radar screen showing cars approaching from behind. 
 
-![Image 4](../../images/bike-tech_1709494249246.png)  
+![Wahoo Radar interface](../../images/bike-tech_1709494249246.png)  
 > My Wahoo showing a car approaching from behind.
 
 This is a huge safety feature, especially when riding in traffic or on busy roads. The Garmin Varia unit that I have also doubles as a rear light, which is a nice bonus. It flashes when cars are approaching, and stays solid when they're not.
 
-![Image 0](../../images/bike-tech_1709493838528.png)  
+![Rear Radar on the BMC Timemachine](../../images/bike-tech_1709493838528.png)  
 
 > #### Why it matters
 > The radar is a huge safety feature. It's not uncommon to be riding in a group and not hear a car approaching from behind. The radar gives you a heads-up, so you can move over and let the car pass. It's also a nice feature when riding solo, as it gives you a little more peace of mind.
