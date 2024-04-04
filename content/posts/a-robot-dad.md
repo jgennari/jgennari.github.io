@@ -1,5 +1,5 @@
 ---
-title: "A Robot Dad"
+title: "A Robot, Dad?"
 date: 2024-04-04T10:56:18-06:00
 draft: false
 tags: ["childhood"]
