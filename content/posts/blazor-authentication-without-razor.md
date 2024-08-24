@@ -2,6 +2,9 @@
 title: "Blazor Authentication Without Razor Pages"
 date: 2024-08-23T18:00:02-04:00
 draft: false
+tags: ["c#","blazor","programming","authentication"]
+author: "Me"
+category: ["Tech"]
 ---
 
 For a while now I've been using the standard ASP.NET authentication methods with customized Razor pages to match the style of my site. And while this works, it's annoying to lose all the functionality of Blazor, especially when you pour hours of time into customizing the look-and-feel, only to need to recreate it in the Razor page.

@@ -2,6 +2,9 @@
 title: "Blazor Magic Link"
 date: 2024-08-21T18:33:25-04:00
 draft: false
+tags: ["c#","blazor","programming"]
+author: "Me"
+category: ["Tech"]
 ---
 
 I wanted a quick Magic Link implementation for my Blazor app, so I cobbled together a solution. I took inspiration from a NuGet package (forgot which one), but it's simple enough to do with a few methods.
