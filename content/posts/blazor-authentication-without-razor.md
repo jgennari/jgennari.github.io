@@ -2,7 +2,7 @@
 title: "Blazor Authentication Without Razor Pages"
 date: 2024-08-23T18:00:02-04:00
 draft: false
-tags: ["c#","blazor","programming","authentication"]
+tags: ["csharp","blazor","programming","authentication"]
 author: "Me"
 category: ["Tech"]
 ---

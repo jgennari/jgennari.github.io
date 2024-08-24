@@ -2,7 +2,7 @@
 title: "Running Blazor on Fly.io"
 date: 2024-08-24T10:36:56-04:00
 draft: false
-tags: ["c#","blazor","hosting"]
+tags: ["csharp","blazor","hosting"]
 author: "Me"
 category: ["Tech"]
 ---
