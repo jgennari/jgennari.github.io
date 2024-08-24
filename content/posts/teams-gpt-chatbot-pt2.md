@@ -32,7 +32,7 @@ Next thing I do is loop until a boolean variable named `isComplete` is true. Thi
 
 ![Image 4](../../images/teams-gpt-chatbot-pt2_1690682645721.png)  
 
-So there's a lot to unpack here, and our first real detour. So one big downside of the Teams Power Automate connector is that it doesn't support querying replies natively. Luckily the Microsoft Graph *does* have that functionaility. And the `HTTP with Azure AD` connector makes this super simple. Basically, if the user running the flow has access to that information, you can access replies.
+So there's a lot to unpack here, and our first real detour. So one big downside of the Teams Power Automate connector is that it doesn't support querying replies natively. Luckily the Microsoft Graph *does* have that functionality. And the `HTTP with Azure AD` connector makes this super simple. Basically, if the user running the flow has access to that information, you can access replies.
 
 ![Image 5](../../images/teams-gpt-chatbot-pt2_1690682758862.png)
 
@@ -40,7 +40,7 @@ So the basic flow is as follows:
 
 1. Get the replies to the message
 2. Parse the JSON response from the graph
-3. Initialize the array to store the entire conversation (including the original prompt and initilization message)
+3. Initialize the array to store the entire conversation (including the original prompt and initialization message)
 4. Iterate over the replies and add them to the array
 5. Set the `isComplete` variable to true if the last message is "done"
 6. Clear the array
