@@ -48,6 +48,8 @@ params:
         url: "https://www.strava.com/athletes/jgennari"
       - name: printables
         url: "https://www.printables.com/social/202625-joey-gennari"
+      - name: stackoverflow
+        url: "https://stackoverflow.com/users/363859/joey-gennari"
 
 languages:
     en:
