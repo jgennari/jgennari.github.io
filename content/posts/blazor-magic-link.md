@@ -4,7 +4,7 @@ date: 2024-08-21T18:33:25-04:00
 draft: false
 tags: ["csharp","blazor","programming"]
 author: "Me"
-category: ["Tech"]
+categories: ["Tech"]
 ---
 
 I wanted a quick Magic Link implementation for my Blazor app, so I cobbled together a solution. I took inspiration from a NuGet package (forgot which one), but it's simple enough to do with a few methods.

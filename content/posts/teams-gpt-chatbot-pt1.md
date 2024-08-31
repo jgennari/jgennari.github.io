@@ -4,7 +4,7 @@ date: 2023-07-25T20:33:32-04:00
 draft: false
 tags: ["ai","chatgpt","microsoft","teams"]
 author: "Me"
-category: ["Tech"]
+categories: ["Tech"]
 series: ["Build with Me"]
 ---
 

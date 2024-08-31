@@ -4,7 +4,7 @@ date: 2023-07-30T10:15:11-04:00
 draft: false
 tags: ["ai","github","copilot","blog","hugo"]
 author: "Me"
-category: ["Tech"]
+categories: ["Tech"]
 series: []
 ---
 

@@ -61,8 +61,8 @@ languages:
           series: series
         menu:
             main:
-                - name: series
-                  url: series
+                - name: categories
+                  url: categories
                   weight: 5
                 - name: archive
                   url: archives
@@ -83,6 +83,11 @@ outputs:
         - JSON
 
 markup:
+  goldmark:
+    parser:
+      attribute:
+        block: true
+        title: true
   highlight:
     codeFences: true
     guessSyntax: true

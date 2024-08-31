@@ -4,7 +4,7 @@ date: 2024-03-01T12:03:20-05:00
 draft: false
 tags: ["docker","unraid"]
 author: "Me"
-category: ["Tech"]
+categories: ["Tech"]
 series: ["Build with Me"]
 ---
 

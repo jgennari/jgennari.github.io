@@ -7,7 +7,7 @@ categories: ["Cycling"]
 author: "Me"
 ---
 
-If you've never been on a road bike, or if you haven't been on one in the last 10 years, the amount of technology on bikes today is mindblowing. From electronic shifting to power meters, the technology has come a long way. But how much of this tech is nice to have and how much makes a difference? Let's jump in and find out. 
+If you've never been on a road bike, or if you haven't been on one in the last 10 years, the amount of technology on bikes today is mind-blowing. From electronic shifting to power meters, the technology has come a long way. But how much of this tech is nice to have and how much makes a difference? Let's jump in and find out. 
  
 ![Bike Tech by Component](../../images/bike-tech_1709823815230.jpeg)  
 

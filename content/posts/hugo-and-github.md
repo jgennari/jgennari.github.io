@@ -4,7 +4,7 @@ date: 2023-07-28T17:22:03-04:00
 draft: false
 tags: ["hugo","github"]
 author: "Me"
-category: ["Tech"]
+categories: ["Tech"]
 ---
 
 I'd been running my blog on Ghost and DigitalOcean for a bit now, and while it's not super expensive, it's certainly not free. And I wasn't comfortable with the fragility of the config. And while the editor was nice, it seemed like overkill for the type of blog I was hoping to have. I wanted something I could quickly get my thoughts on to paper. So after a little research I ended up configuring Hugo and publishing it to Github Pages. But the process wasn't seamless, so here's my notes:

@@ -4,7 +4,7 @@ date: 2024-08-24T10:36:56-04:00
 draft: false
 tags: ["csharp","blazor","hosting"]
 author: "Me"
-category: ["Tech"]
+categories: ["Tech"]
 ---
 
 I've been running a Blazor app on Heroku for a bit, but I decided to give [Fly.io](https://fly.io) a try. Aside from the ease of deployment through their CLI, they boast some pretty cool, zero-configuration global deployment benefits:

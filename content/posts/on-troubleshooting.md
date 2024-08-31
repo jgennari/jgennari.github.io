@@ -4,7 +4,7 @@ date: 2024-08-23T18:57:38-04:00
 draft: false
 tags: ["philosophy","programming"]
 author: "Me"
-category: ["Tech"]
+categories: ["Tech"]
 ---
 
 As a long time contributor to StackOverflow, the quality of posts are wide ranging. In the hay-day, a contributor could rack up tons of points by pointing low-effort posters in the right direction with a single line of code. Now I'm sure the majority of those questions could be (and are) answered by AI, which was trained on my answers. But I think troubleshooting is the [hallmark](https://www.etymonline.com/word/hallmark) of a great engineer. Over time, you learn to hone troubleshooting skills and you can often tell a lot about an engineering by the tooling they surround themselves with.

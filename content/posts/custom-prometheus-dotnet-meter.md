@@ -4,7 +4,7 @@ date: 2024-08-25T21:36:04-04:00
 draft: false
 tags: ["csharp","metrics"]
 author: "Me"
-category: ["Tech"]
+categories: ["Tech"]
 ---
 
 In a previous post I showed you how to add Prometheus metrics to a Blazor app on Fly.io using the OpenTelemetry NuGet packages. Fly makes capturing and displaying metrics simple with their built in Grafana dashboards. But sometimes there are events and metrics from the application layer that you'd like to track, such as how many views a particular piece of content got. Here I've created `InstrumentationService.cs` which I can easily inject into any Blazor component in order to increment a counter:

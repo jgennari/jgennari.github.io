@@ -5,7 +5,7 @@ date: 2024-02-26T08:35:56-05:00
 draft: false
 tags: ["race report"]
 author: "Me"
-category: ["cycling"]
+categories: ["Cycling"]
 series: []
 ---
 
