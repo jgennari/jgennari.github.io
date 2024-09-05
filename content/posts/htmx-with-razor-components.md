@@ -1,5 +1,5 @@
 ---
-title: "Htmx With Razor Components"
+title: "Htmx Using Razor Components"
 date: 2024-08-30T15:53:48-04:00
 draft: false
 tags: ["csharp","htmx","razor","programming"]
