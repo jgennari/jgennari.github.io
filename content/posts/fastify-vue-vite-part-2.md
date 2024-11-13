@@ -1,6 +1,6 @@
 ---
 title: "Adding Vue Router and Shadcn-Vue to Fastify and Vite: Part 2"
-date: 2024-11-12  T10:44:27-04:00
+date: 2024-11-12T10:44:27-04:00
 draft: false
 description: "Continuing the setup by adding Vue Router for page navigation and integrating Shadcn-Vue for building modern UIs."
 tags: ["javascript","vue","nodejs"]
