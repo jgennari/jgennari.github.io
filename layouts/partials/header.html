@@ -46,7 +46,7 @@
             {{- if site.Title }}
             <a href="{{ "" | absLangURL }}" accesskey="h" title="{{ $label_text }} (Alt + H)">
                 {{- if site.Params.label.icon }}
-                {{- $img := resources.Get site.Params.label.icon }}
+                {{- $img := resources.Get (cond (eq (site.Params.label.iconDark) "") site.Params.label.icon (cond (in (slice "dark" "auto") site.Params.defaultTheme) site.Params.label.iconDark site.Params.label.icon)) }}
                 {{- if $img }}
                     {{- $processableFormats := (slice "jpg" "jpeg" "png" "tif" "bmp" "gif") -}}
                     {{- if hugo.IsExtended -}}
@@ -61,10 +61,30 @@
                         {{- end }}
                     {{- end }}
                     <img src="{{ $img.Permalink }}" alt="" aria-label="logo"
-                        height="{{- site.Params.label.iconHeight | default "30" -}}">
+                        height="{{- site.Params.label.iconHeight | default "30" -}}"
+                        class="logo-light">
+                    {{- if site.Params.label.iconDark }}
+                    {{- $imgDark := resources.Get site.Params.label.iconDark }}
+                    {{- if $imgDark }}
+                        {{- if site.Params.label.iconHeight }}
+                            {{- $imgDark = $imgDark.Resize (printf "x%d" site.Params.label.iconHeight) }}
+                        {{ else }}
+                            {{- $imgDark = $imgDark.Resize "x30" }}
+                        {{- end }}
+                        <img src="{{ $imgDark.Permalink }}" alt="" aria-label="logo"
+                            height="{{- site.Params.label.iconHeight | default "30" -}}"
+                            class="logo-dark" style="display: none;">
+                    {{- end }}
+                    {{- end }}
                 {{- else }}
                 <img src="{{- site.Params.label.icon | absURL -}}" alt="" aria-label="logo"
-                    height="{{- site.Params.label.iconHeight | default "45" -}}">
+                    height="{{- site.Params.label.iconHeight | default "45" -}}"
+                    class="logo-light">
+                {{- if site.Params.label.iconDark }}
+                <img src="{{- site.Params.label.iconDark | absURL -}}" alt="" aria-label="logo"
+                    height="{{- site.Params.label.iconHeight | default "45" -}}"
+                    class="logo-dark" style="display: none;">
+                {{- end }}
                 {{- end -}}
                 {{- else if hasPrefix site.Params.label.iconSVG "<svg" }}
                     {{ site.Params.label.iconSVG | safeHTML }}

@@ -10,13 +10,15 @@ module:
 
 params:
   env: production
-  title: Joey Gennari
+  title: Gennari Industries Blog
   author: Me
   DateFormat: "January 2, 2006"
   
   # Logo configuration
   label:
-    icon: "/images/GennariIndustries-White.png"
+    icon: "/images/GennariIndustries-Black.png"
+    iconDark: "/images/GennariIndustries-White.png"
+    iconHeight: 45
 
   ShowReadingTime: true
   ShowShareButtons: true

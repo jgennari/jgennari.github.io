@@ -1,0 +1,12 @@
+/* Logo theme switching */
+body:not(.dark) .logo-dark {
+    display: none !important;
+}
+
+body.dark .logo-light {
+    display: none !important;
+}
+
+body.dark .logo-dark {
+    display: inline-block !important;
+}
