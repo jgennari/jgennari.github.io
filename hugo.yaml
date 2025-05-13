@@ -1,6 +1,6 @@
 baseURL: http://gennari.com/
 languageCode: en-us
-title: Joey Gennari
+title: Gennari Industries Blog
 
 googleAnalytics: G-ZNMYBWFCPN
 
@@ -13,6 +13,10 @@ params:
   title: Joey Gennari
   author: Me
   DateFormat: "January 2, 2006"
+  
+  # Logo configuration
+  label:
+    icon: "/images/GennariIndustries-White.png"
 
   ShowReadingTime: true
   ShowShareButtons: true
@@ -32,8 +36,8 @@ params:
   tocopen: false
 
   homeInfoParams:
-    Title: Hello friends 👋
-    Content: My name is Joey Gennari and I'm a founder at [Movement.io](https://movment.io), a video delivery platform for fitness creators. I'm also an engineer and athlete from the United States. I have interest in AI, software development, data science, and endurance sports. I also love 3D printing, CAD and design-for-manufacturing. Contact me at hi@gennari.com.
+    Title: Welcome to Gennari Industries!
+    Content: My name is Joey Gennari and I'm a founder at [Movement.io](https://movment.io), a video delivery platform for fitness creators. I'm also an engineer and athlete from the United States. I have interest in AI, software development, data science, and endurance sports. I also love 3D printing, CAD and design-for-manufacturing. Contact me at hi@gennari.industries.com.
 
   socialIcons: # optional
       - name: github
