@@ -34,6 +34,9 @@ body.dark .logo-dark {
 }
 
 @media screen and (max-width:768px) {
+    .logo {
+     padding: 8px;
+    }
     .menu {
      list-style:none;
      position:absolute;
