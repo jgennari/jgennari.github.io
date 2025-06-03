@@ -1,6 +1,6 @@
-baseURL: http://gennari.com/
+baseURL: http://gennari.industries/
 languageCode: en-us
-title: Gennari Industries Blog
+title: Joey Gennari | Blog
 
 googleAnalytics: G-ZNMYBWFCPN
 
@@ -10,7 +10,7 @@ module:
 
 params:
   env: production
-  title: Gennari Industries Blog
+  title: Joey Gennari | Blog
   author: Me
   DateFormat: "January 2, 2006"
   
