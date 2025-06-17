@@ -1,7 +1,7 @@
 ---
 title: "How I Started Fixing Things"
 date: 2025-06-16T18:45:16-04:00
-draft: true
+draft: false
 tags: ["personal","maker","childhood"]
 author: "Me"
 categories: ["Personal"]
@@ -19,16 +19,25 @@ He recounted how gramps (my mom's grandfather) was on the phone and was having t
 
 So without skipping a beat I proceeded to rattle off the keyboard commands to reset his monitor resolution:
 
-"Gramps, press Windows key plus R."
-"What's the Windows key?"
-"The one with the flag. Hold it and press R."
-"Okay, I see a box."
-"Type 'desk.cpl' and press Enter."
-"D-E-S-K dot C-P-L... okay."
-"Press Ctrl-Tab three times to get to Settings."
-"Got it."
-"Now Tab five times to get to the resolution dropdown, then press down arrow twice."
-"Okay... oh! Everything looks normal again!"
+> "Gramps, press Windows key plus R."
+> 
+> "What's the Windows key?"
+> 
+> "The one with the flag. Hold it and press R."
+> 
+> "Okay, I see a box."
+> 
+> "Type 'desk.cpl' and press Enter."
+> 
+> "D-E-S-K dot C-P-L... okay."
+> 
+> "Press Ctrl-Tab three times to get to Settings."
+> 
+> "Got it."
+> 
+> "Now Tab five times to get to the resolution dropdown, then press down arrow twice."
+> 
+> "Okay... oh! Everything looks normal again!"
 
 And with that, gramps' screen was back to normal. I remember the look on my dad's face. His jaw was on the floor. As I kid I found my currency. This was how I'd trade my skills for attention. Fast forward to today and I still look for that same gratification.
 
