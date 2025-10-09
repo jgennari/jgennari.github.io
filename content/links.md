@@ -15,7 +15,7 @@ title: "Links"
 [Instagram](https://www.instagram.com/joeygennari/) - my photo and video work.  
 [X](https://x.com/cybrjoe) - not much here.  
 [YouTube](https://www.youtube.com/c/JoeyGennari) - some of my long-form video work.  
-[Spotify](https://open.spotify.com/user/cybrjoe) - mostly EDM and folk playlists.  
+[Spotify](https://open.spotify.com/user/cybrjoe) - music i'm currently obsessed with.
 
 ### Sports
 
