@@ -1,2 +1,13 @@
 {{ $navMenu := resources.Get "js/extended/menu-trigger.js" | js.Build "menu-trigger.js" | minify | fingerprint }}
 <script language="javascript" type="text/javascript" src="{{ $navMenu.Permalink }}"></script>
+
+<!-- GLightbox JS -->
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script>
+  const lightbox = GLightbox({
+    selector: '.lightbox-image',
+    touchNavigation: true,
+    loop: true,
+    autofocusVideos: false
+  });
+</script>

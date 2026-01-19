@@ -67,6 +67,9 @@ languages:
           series: series
         menu:
             main:
+                - name: photography
+                  url: /photography
+                  weight: 5
                 - name: categories
                   url: categories
                   weight: 5
