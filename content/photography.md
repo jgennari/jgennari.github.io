@@ -1,5 +1,5 @@
 ---
 title: "Photography"
+layout: "single"
+type: "photography"
 ---
-
-{{< image-gallery gallery_dir="/album" >}}
