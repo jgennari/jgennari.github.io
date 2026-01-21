@@ -1,6 +1,5 @@
 <span id="{{ .File.UniqueID }}" title="{{ i18n "article.page_views" }}">
 <script data-goatcounter="https://jgennari.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
-<script>
-    window.goatcounter.visit_count({append: '#{{ .File.UniqueID }}'})
+        async src="//gc.zgo.at/count.js"
+        onload="window.goatcounter.visit_count({append: '#{{ .File.UniqueID }}'})">
 </script>
