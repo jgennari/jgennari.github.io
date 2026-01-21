@@ -10,6 +10,6 @@
         document.getElementById('{{ .File.UniqueID }}').innerText = '0 views'
     })
 
-    r.open('GET', "https://stats.gennari.com/counter/" + encodeURIComponent({{ .RelPermalink }}.replace(/(\/)?$/, '')) + '.json')
+    r.open('GET', "https://jgennari.goatcounter.com/count/" + encodeURIComponent({{ .RelPermalink }}.replace(/(\/)?$/, '')) + '.json')
     r.send()
 </script>
