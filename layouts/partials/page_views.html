@@ -1,5 +1,13 @@
 <span id="{{ .File.UniqueID }}" title="{{ i18n "article.page_views" }}">
 <script data-goatcounter="https://jgennari.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"
-        onload="window.goatcounter.visit_count({append: '#{{ .File.UniqueID }}'})">
+        onload="
+            var r = new XMLHttpRequest();
+            r.addEventListener('load', function() {
+                document.getElementById('{{ .File.UniqueID }}').innerText = JSON.parse(this.responseText).count + ' views';
+            });
+            var path = window.goatcounter.get_data()['p'];
+            r.open('GET', 'https://jgennari.goatcounter.com/counter/' + encodeURIComponent(path) + '.json');
+            r.send();
+        ">
 </script>
