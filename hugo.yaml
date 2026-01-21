@@ -2,8 +2,6 @@ baseURL: http://gennari.industries/
 languageCode: en-us
 title: Joey Gennari | Blog
 
-googleAnalytics: G-ZNMYBWFCPN
-
 module:
   imports:
     - path: github.com/adityatelange/hugo-PaperMod
