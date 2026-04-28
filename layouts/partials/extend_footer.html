@@ -1,6 +1,10 @@
 {{ $navMenu := resources.Get "js/extended/menu-trigger.js" | js.Build "menu-trigger.js" | minify | fingerprint }}
 <script language="javascript" type="text/javascript" src="{{ $navMenu.Permalink }}"></script>
 
+<!-- GoatCounter analytics — registers one pageview per load -->
+<script data-goatcounter="https://jgennari.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
 <!-- GLightbox JS -->
 <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 <script>

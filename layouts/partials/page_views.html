@@ -1,13 +1,14 @@
-<span id="{{ .File.UniqueID }}" title="{{ i18n "article.page_views" }}">- views
-<script data-goatcounter="https://jgennari.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"
-        onload="
-            var r = new XMLHttpRequest();
-            r.addEventListener('load', function() {
-                document.getElementById('{{ .File.UniqueID }}').innerText = JSON.parse(this.responseText).count + ' views';
-            });
-            var path = window.goatcounter.get_data()['p'];
-            r.open('GET', 'https://jgennari.goatcounter.com/counter/' + encodeURIComponent(path) + '.json');
-            r.send();
-        ">
+<span id="{{ .File.UniqueID }}" title="{{ i18n "article.page_views" }}">- views</span>
+<script>
+(function() {
+    var span = document.getElementById('{{ .File.UniqueID }}');
+    var r = new XMLHttpRequest();
+    r.addEventListener('load', function() {
+        if (this.status >= 200 && this.status < 300) {
+            try { span.innerText = JSON.parse(this.responseText).count + ' views'; } catch (e) {}
+        }
+    });
+    r.open('GET', 'https://jgennari.goatcounter.com/counter/' + encodeURIComponent('{{ .RelPermalink }}') + '.json');
+    r.send();
+})();
 </script>
