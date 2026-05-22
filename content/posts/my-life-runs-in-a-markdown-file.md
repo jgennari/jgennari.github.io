@@ -5,7 +5,7 @@ draft: false
 tags: ["claude", "automation", "personal", "tooling"]
 author: "Me"
 categories: ["Tech"]
-series: []
+series: ["Life Admin"]
 ---
 
 I have a Claude Code-powered personal assistant that runs on a schedule. It reads my email, my calendar, my texts, the kids' school calendar, my plant care schedule, the weather, and my custody plan. It writes the day to a markdown file every morning and updates that file every 15 minutes throughout the work day. Most of the time it doesn't tell me anything — that's the point.

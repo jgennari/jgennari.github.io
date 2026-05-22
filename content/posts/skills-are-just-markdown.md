@@ -5,7 +5,7 @@ draft: false
 tags: ["claude", "automation", "tooling"]
 author: "Me"
 categories: ["Tech"]
-series: []
+series: ["Life Admin"]
 ---
 
 The [first post in this series](/posts/my-life-runs-in-a-markdown-file/) talked about `/journal` and `/checkin` — a daily journal and a 15-minute check-in loop that runs unattended on a schedule. I called them "skills" without explaining what that means. This post is about the mechanism.
