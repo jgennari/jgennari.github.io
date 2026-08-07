@@ -237,3 +237,5 @@ The Kilkers headed their way, and Lily, Dylan, and I boarded our final flight ba
 After six days of bison, horses, caves, dinosaurs, mammoths, trains, mountains, water slides, shooting stars, ice cream, and an absurd number of photographs, our South Dakota adventure was over.
 
 And somewhere in the middle of all of it, we managed to surprise Uncle Steve for his 70th birthday — which was the whole reason we were there in the first place.
+
+You can see the rest of the photos in the [full South Dakota album](https://photos.icloud.com/shared/album/0b0Vok_ylG3yDnbCIOmDjJQ9w).
