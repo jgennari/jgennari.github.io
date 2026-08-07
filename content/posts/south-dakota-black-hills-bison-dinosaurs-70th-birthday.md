@@ -1,7 +1,7 @@
 ---
 title: "South Dakota: The Black Hills, Bison, Dinosaurs, and a 70th Birthday"
 date: 2026-08-07T14:20:21-04:00
-draft: true
+draft: false
 tags: ["personal", "family", "travel", "south dakota"]
 author: "Me"
 categories: ["Personal"]
