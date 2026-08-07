@@ -1,76 +1,79 @@
-/* Logo theme switching */
-body:not(.dark) .logo-dark {
-    display: none !important;
+/* Switch between the light and dark logo assets with PaperMod's current theme state. */
+.logo-dark {
+    display: none;
 }
 
-body.dark .logo-light {
-    display: none !important;
+[data-theme="dark"] .logo-light {
+    display: none;
 }
 
-body.dark .logo-dark {
-    display: inline-block !important;
+[data-theme="dark"] .logo-dark {
+    display: inline-block;
+}
+
+.home-info-content {
+    display: flow-root;
+}
+
+.home-info-avatar {
+    float: left;
+    max-width: 25%;
+    margin-right: 20px;
 }
 
 .menu {
-    display:flex;
-    margin:auto var(--gap);
-    list-style:none;
-    word-break:keep-all;
-    overflow-x:auto;
-    white-space:nowrap
+    margin: auto var(--gap);
 }
 
-.menu li+li {
-    margin-inline-start:var(--gap)
-}
+@media screen and (max-width: 768px) {
+    .header-nav {
+        position: relative;
+        align-items: center;
+    }
 
-.menu a {
-    font-size:16px
-}
-
-.menu .active {
-    font-weight:500;
-    border-bottom:2px solid
-}
-
-@media screen and (max-width:768px) {
     .logo {
-     padding: 8px;
+        padding: 8px;
     }
+
     .menu {
-     list-style:none;
-     position:absolute;
-     right:0;
-     z-index:5;
-     margin-bottom:var(--gap);
-     padding:var(--gap);
-     background:var(--code-bg);
-     border-radius:var(--radius);
-     border:2px solid var(--tertiary);
-     line-height:2.5;
-     margin:calc(var(--header-height) - var(--gap))var(--gap);
-     display:block
+        position: absolute;
+        top: calc(var(--header-height) - var(--gap));
+        right: var(--gap);
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        margin: 0;
+        padding: var(--gap);
+        overflow: visible;
+        line-height: 2.5;
+        background: var(--code-bg);
+        border: 2px solid var(--tertiary);
+        border-radius: var(--radius);
     }
+
     .list .menu {
-     background:var(--entry)
+        background: var(--entry);
     }
-    .menu li+li {
-     margin-inline-start:0
+
+    .menu.is-collapsed {
+        display: none;
     }
+
+    .menu-theme-toggle {
+        align-self: flex-end;
+    }
+
     #menu-trigger {
-     font-size:30px;
-     position:relative;
-     display:block;
-     float:right;
-     margin:auto var(--gap)
-    }
-    .hidden {
-        display:none
+        position: relative;
+        display: block;
+        margin: auto var(--gap);
+        font-size: 30px;
     }
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width: 769px) {
     #menu-trigger {
-     display:none
+        display: none;
     }
 }

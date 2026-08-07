@@ -1,5 +1,5 @@
 baseURL: http://gennari.industries/
-languageCode: en-us
+locale: en-US
 title: Joey Gennari | Blog
 
 module:
@@ -57,7 +57,7 @@ params:
 
 languages:
     en:
-        languageName: "English"
+        label: "English"
         weight: 1
         taxonomies:
           category: categories
