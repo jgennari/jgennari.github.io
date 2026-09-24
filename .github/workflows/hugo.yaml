@@ -7,6 +7,11 @@ on:
     branches:
       - main
 
+  # Rebuild daily so Hugo publishes posts once their future publishDate passes.
+  schedule:
+    - cron: '17 9 * * *'
+      timezone: 'America/New_York'
+
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
