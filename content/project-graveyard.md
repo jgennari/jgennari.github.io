@@ -26,6 +26,14 @@ I built software for commercial displays: calendars, menus, and other informatio
 
 There was a web app and a service to drive the displays. The appeal was that the screen could be useful without someone standing there operating it. I don't run displayhop now, but the code is a reminder of a kind of software I still enjoy: something quiet that just does its job in the background.
 
+## DroidOS — 2017
+
+Patrick and I worked on an R2-D2 together. He did the construction; I did the electronics. [DroidOS](https://github.com/jgennari/DroidOS) was the Arduino-based control system I built for it. It read the radio receiver and handled things like lights and sound.
+
+We got far enough to design a board and make the controls work. I still like seeing software leave the screen and become part of something physical. The repository has the board and code, but the droid was very much a joint project.
+
+![The DroidOS circuit board for our R2-D2 project](/images/droidos-board.png)
+
 ## ScoreKeepr — 2017
 
 [ScoreKeepr](https://github.com/jgennari/ScoreKeepr) was a wireless scorekeeper for games like cornhole and table tennis. This one made it off the screen. I designed a circuit board, modeled and 3D-printed a case, assembled it, and wrote the firmware. The finished prototype worked, and it was even shown on one of Adafruit's livestreams.
