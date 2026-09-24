@@ -22,7 +22,7 @@ I still think it was a good idea. It also reminds me how much of a product is ou
 
 ## displayhop — 2017
 
-At Lennox I built software for commercial displays. Think calendars, menus, and other information that belongs on a screen people walk past. I liked the problem enough to try my own version, displayhop.
+I built software for commercial displays: calendars, menus, and other information that belongs on a screen people walk past. I liked the problem enough to try my own version, displayhop.
 
 There was a web app and a service to drive the displays. The appeal was that the screen could be useful without someone standing there operating it. I don't run displayhop now, but the code is a reminder of a kind of software I still enjoy: something quiet that just does its job in the background.
 
