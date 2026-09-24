@@ -13,6 +13,9 @@ type: "links"
 [Monkey Island](https://monkeyisland.fyi/) - our Minecraft server for friends, with joining instructions and a live world map.  
 [Project Graveyard](/project-graveyard/) - things I built and eventually put down.
 
+### Photography
+
+[Photography](/photography/) - my photographs and albums.
 
 ### Social Media
 
