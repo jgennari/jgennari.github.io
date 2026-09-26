@@ -27,6 +27,8 @@ I later disassembled [released PowerPlay firmware](https://orqafpv.freshdesk.com
 
 Matched tests finally isolated the MOV quirk. Two files had the same video and audio packets, timestamps, and chunk offsets. With video `stsc` entries `(1,1,1), (3,2,1), (5,1,1)`, playback stopped after a frame or two. Adding a redundant `(4,2,1)` entry made the otherwise identical file play through. So the Scout can play two-sample chunks, but this firmware mishandles a two-sample `stsc` entry that spans consecutive chunks. I still don't have the Scout's own firmware to identify the faulty instruction.
 
+**September 26 update:** I checked the released PowerPlay v2.0032.01 reader as well. One path tracks samples within chunks and waits for the next `stsc` entry boundary; another sample-stepping path remains ambiguous. My Scout reports version `1.0032.0058`, so I can't confirm that the released image contains the same bug. The matched playback tests establish what fails on the Scout, not which firmware instruction causes it.
+
 Removing SEI data had already fixed the thumbnails, but wasn't enough for sustained playback. This is the combined recipe that worked, not a claim that every encoder setting is mandatory.
 
 ## Make a file
