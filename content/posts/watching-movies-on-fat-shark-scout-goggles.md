@@ -21,7 +21,9 @@ The working recipe uses:
 - **Timing:** video samples of 1001 ticks at a 60000 timescale; audio samples of 1024 ticks at 32000.
 - **Packaging:** remove H.264 SEI data, disable edit lists, and use **one sample per chunk for both tracks**.
 
-That last item was the breakthrough. The goggles' recordings used one sample per chunk. Our ffmpeg files grouped samples into chunks. Rewriting the `stsc` (sample-to-chunk) and `stco` (chunk-offset) tables fixed playback without changing the encoded video or audio. That points to a limitation in the goggles' container parser; I haven't inspected their firmware.
+That last item was the breakthrough. The goggles' recordings used one sample per chunk. Our ffmpeg files grouped samples into chunks. Rewriting the `stsc` (sample-to-chunk) and `stco` (chunk-offset) tables fixed playback without changing the encoded video or audio. That points to a limitation in the goggles' container parser.
+
+I later disassembled [released PowerPlay firmware](https://orqafpv.freshdesk.com/support/solutions/articles/48001281127-powerplay) and found that its MOV writer explicitly creates one `stsc` entry with one sample per chunk. The [Scout manual](https://myosuploads3.banggood.com/products/20190613/20190613044907ScoutManualRevD.pdf) calls its recorder a PowerPlay DVR, although I can't confirm it runs the same firmware build. The native recordings also contain a large `skip` box, but the working movie plays without one. The player stops on some otherwise valid MOV chunk tables; I haven't pinned down which part of its reader fails.
 
 Removing SEI data had already fixed the thumbnails, but wasn't enough for sustained playback. This is the combined recipe that worked, not a claim that every encoder setting is mandatory.
 
