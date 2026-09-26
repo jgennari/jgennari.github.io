@@ -25,7 +25,7 @@ That last item was the breakthrough. The goggles' recordings used one sample per
 
 I later disassembled [released PowerPlay firmware](https://orqafpv.freshdesk.com/support/solutions/articles/48001281127-powerplay) and found that its MOV writer explicitly creates one `stsc` entry with one sample per chunk. The [Scout manual](https://myosuploads3.banggood.com/products/20190613/20190613044907ScoutManualRevD.pdf) calls its recorder a PowerPlay DVR, although I can't confirm it runs the same firmware build. The native recordings also contain a large `skip` box, but the working movie plays without one.
 
-To narrow down the trigger, I tested three files with identical video and audio packets. One sample per chunk played with either one or two `stsc` entries. A file with more entries that grouped two video samples into a chunk stopped after a frame or two. That points to sample grouping, but leaves open a limit on the number of table entries. I still don't have the Scout's own firmware to identify the faulty instruction.
+To narrow down the trigger, I tested files with identical video and audio packets. The Scout played files with one or twelve `stsc` entries when every chunk held one sample. It also played a file with one two-sample chunk. The failing file has longer runs of two-sample chunks and repeated changes between one- and two-sample chunks, so I haven't isolated which part of that layout trips the player. I still don't have the Scout's own firmware to identify the faulty instruction.
 
 Removing SEI data had already fixed the thumbnails, but wasn't enough for sustained playback. This is the combined recipe that worked, not a claim that every encoder setting is mandatory.
 
