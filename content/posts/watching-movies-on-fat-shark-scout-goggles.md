@@ -23,7 +23,9 @@ The working recipe uses:
 
 That last item was the breakthrough. The goggles' recordings used one sample per chunk. Our ffmpeg files grouped samples into chunks. Rewriting the `stsc` (sample-to-chunk) and `stco` (chunk-offset) tables fixed playback without changing the encoded video or audio. That points to a limitation in the goggles' container parser.
 
-I later disassembled [released PowerPlay firmware](https://orqafpv.freshdesk.com/support/solutions/articles/48001281127-powerplay) and found that its MOV writer explicitly creates one `stsc` entry with one sample per chunk. The [Scout manual](https://myosuploads3.banggood.com/products/20190613/20190613044907ScoutManualRevD.pdf) calls its recorder a PowerPlay DVR, although I can't confirm it runs the same firmware build. The native recordings also contain a large `skip` box, but the working movie plays without one. The player stops on some otherwise valid MOV chunk tables; I haven't pinned down which part of its reader fails.
+I later disassembled [released PowerPlay firmware](https://orqafpv.freshdesk.com/support/solutions/articles/48001281127-powerplay) and found that its MOV writer explicitly creates one `stsc` entry with one sample per chunk. The [Scout manual](https://myosuploads3.banggood.com/products/20190613/20190613044907ScoutManualRevD.pdf) calls its recorder a PowerPlay DVR, although I can't confirm it runs the same firmware build. The native recordings also contain a large `skip` box, but the working movie plays without one.
+
+To pin down the trigger, I tested three files with identical video and audio packets. One sample per chunk played with either one or two `stsc` entries. A file that grouped two video samples into a chunk stopped after a frame or two. That isolates the incompatible layout to sample grouping, not the number of table entries. I still don't have the Scout's own firmware to identify the faulty instruction.
 
 Removing SEI data had already fixed the thumbnails, but wasn't enough for sustained playback. This is the combined recipe that worked, not a claim that every encoder setting is mandatory.
 
