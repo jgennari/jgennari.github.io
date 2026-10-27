@@ -73,6 +73,59 @@ Our expressions watch for changes across several reference properties and clear 
 
 That's a practical freshness check, not a dedicated connection-status signal. It can clear a cue if every watched value genuinely stays identical long enough. I'd rather have the coaching color disappear than keep showing an old instruction indefinitely.
 
+## The expression running on my rig
+
+Here's the JavaScript expression from my red-brake layer. In SimHub's **Arduino → RGB Matrix** profile, it goes in the condition binding for a **When formula is true** group, with JavaScript enabled. A gear effect inside that group supplies the red color; the expression only returns whether the group should be active.
+
+This uses the Bloops SimHub plugin properties available in my installation. `root` retains state between formula evaluations, and `$prop` reads a SimHub property. On startup, the expression waits for a change in reference telemetry before showing anything.
+
+```javascript
+var names = ['ReferenceBrake', 'ReferenceSpeed', 'ReferenceThrottle', 'ReferenceSteeringWheelAngle', 'ReferenceGear', 'FramesToNextBloop'];
+var now = new Date().getTime();
+var values = [];
+for (var i = 0; i < names.length; i++) {
+  var v = $prop('BloopsPlugin.' + names[i]);
+  if (v === null || v === undefined || !isFinite(Number(v))) {
+    root.referenceBrakeRedV3 = null;
+    return false;
+  }
+  values.push(Number(v));
+}
+// Bloops reference inputs are 0..1; a released pedal can retain a small offset.
+if (values[0] < 0 || values[0] > 1) {
+  root.referenceBrakeRedV3 = null;
+  return false;
+}
+var signature = values.join('|');
+var s = root.referenceBrakeRedV3;
+if (!s || now < s.lastEvaluation || now - s.lastEvaluation > 2000) {
+  root.referenceBrakeRedV3 = {signature: signature, lastChange: now, lastEvaluation: now, live: false, braking: false};
+  return false;
+}
+if (signature !== s.signature) {
+  s.signature = signature;
+  s.lastChange = now;
+  s.live = true;
+}
+s.lastEvaluation = now;
+if (!s.live || now - s.lastChange >= 1500) {
+  s.braking = false;
+  return false;
+}
+// Normalized reference brake: off at 0.5%, pink below 10%, red at 10% or above.
+return values[0] > 0.005 && values[0] >= 0.10;
+```
+
+The pink layer uses the same expression with every `referenceBrakeRedV3` renamed to `referenceBrakePinkV3`, and this final line instead:
+
+```javascript
+return values[0] > 0.005 && values[0] < 0.10;
+```
+
+Its gear effect is pink (`#FFC0CB`). Both groups clear the previous background when active, and their gear effects have redline blinking disabled. The profile order is normal gear, approach cue, throttle cue, pink brake, red brake, flags, then spotter. The two brake conditions don't overlap, and the later flag and spotter layers retain priority.
+
+The `braking` field is left over from our earlier hysteresis version; the final comparison now determines the color directly. I've kept the expression here as it actually runs, including that harmless leftover, rather than quietly substituting a cleaned-up example.
+
 I'm not claiming a lap-time improvement from any of this yet. What I have is a working way to put reference braking information on a display I already use, with one more refinement ready to test.
 
 And I've learned to be suspicious of a property called `Active`. Sometimes it means “this happened once,” which is a surprisingly different instruction when you're heading toward a corner.
